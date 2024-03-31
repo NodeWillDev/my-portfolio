@@ -1,0 +1,71 @@
+:root {
+    --bg-body-color: rgb(233, 233, 233);
+    --bg-color: rgba(192, 192, 192, 0.13);
+    --bg-particle-color: rgb(0, 0, 0);
+    --menu-color: rgb(129, 120, 255);
+    --menu-color-active: rgb(40, 245, 201);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-body-color);
+    transition: 0.3s background-color;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* Helper classes */
+.title-font-1 {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: bold;
+}
+
+.text-font-1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+/* Director classes */
+.box {
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+    position: relative;
+    max-width: 980px;
+    height: 90vh;
+    background-color: var(--bg-color);
+    backdrop-filter: blur(10px);
+    box-shadow: 11px 11px 19px -7px rgba(0, 0, 0, 0.51);
+    border-radius: 0 0 15px 15px;
+    padding: 1.5rem;
+}
+
+.bg-particle {
+    display: block;
+    position: absolute;
+    width: 3px;
+    z-index: -1;
+    background-color: var(--bg-particle-color);
+    animation: up 2s alternate infinite;
+}
+
+@keyframes up {
+    from {
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        bottom: 100%;
+    }
+}

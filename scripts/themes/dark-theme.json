@@ -1,0 +1,7 @@
+{
+    "--bg-body-color": "rgb(0, 0, 0)",
+    "--bg-color": "rgba(0,0,0, .13)",
+    "--bg-particle-color": "rgb(255,255,255)",
+    "--menu-color": "rgba(65,32,255,1)",
+    "--menu-color-active": "rgba(32,201,255,1)"
+}

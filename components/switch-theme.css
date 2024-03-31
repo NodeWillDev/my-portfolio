@@ -1,0 +1,37 @@
+.switch_theme {
+    padding: 1.2rem;
+}
+
+.switch_theme .box_switch {
+    position: relative;
+    width: 12rem;
+    padding: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid var(--bg-particle-color);
+}
+
+.switch_theme .box_switch li {
+    position: absolute;
+    list-style: none;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 0.16em;
+}
+
+.switch_theme .box_switch li.active {
+    opacity: 1;
+}
+
+.switch_theme .box_switch li:nth-child(1).active {
+    color: #ffffff;
+    left: 0%;
+}
+
+.switch_theme .box_switch li:nth-child(2).active {
+    color: #000000;
+    left: 65%;
+}

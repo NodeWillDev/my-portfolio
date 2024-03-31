@@ -1,0 +1,103 @@
+.content_nav {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 1.5rem;
+    width: 0rem;
+    height: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: 0.2s;
+}
+
+.content_nav .content {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    /* background-color: red; */
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_nav.active .content {
+    width: 100vw;
+    opacity: 1;
+    z-index: 1;
+    bottom: -30%;
+    font-size: 25rem;
+}
+
+.content_nav .box_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_nav .box_nav li {
+    user-select: none;
+    list-style: none;
+    position: absolute;
+    transition: 0.2s;
+    transition-delay: calc(0.2s * var(--i));
+    font-size: 3rem;
+    color: var(--menu-color);
+    cursor: pointer;
+}
+
+.content_nav .box_nav.active .nav_button {
+    /* opacity: 0.4; */
+    color: var(--menu-color-active);
+    border: 5px solid var(--menu-color);
+}
+
+.content_nav .box_nav .nav_button:hover {
+    border: 5px solid var(--menu-color);
+
+}
+
+.content_nav .box_nav .nav_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    width: 5.5rem;
+    height: 5.5rem;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 5px solid var(--bg-particle-color);
+}
+
+.content_nav .box_nav .nav_icon {
+    left: 50%;
+    opacity: 0;
+}
+
+.content_nav .box_nav.active .nav_icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transform-origin: 12rem;
+    left: 0%;
+    transform: rotate(calc(360deg / 3 * var(--i)));
+    opacity: 1;
+    width: 7rem;
+}
+
+.content_nav.active {
+    left: 50%;
+    top: 50%;
+    width: 24rem;
+    height: 24rem;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(20px);
+    border-radius: 9px;
+
+    box-shadow: 10px 10px 76px 0px var(--bg-particle-color);
+
+}
