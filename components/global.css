@@ -4,6 +4,9 @@
     --bg-particle-color: rgb(0, 0, 0);
     --menu-color: rgb(129, 120, 255);
     --menu-color-active: rgb(40, 245, 201);
+    --text-title-color: rgb(75, 87, 255);
+    --text-title-color-name: rgb(54, 5, 5);
+    --title-section: rgb(0, 0, 0);
 }
 
 * {
@@ -22,20 +25,30 @@ html {
     overflow-x: hidden;
 }
 
-/* Helper classes */
-.title-font-1 {
-    font-family: "PT Sans Caption", sans-serif;
-    font-weight: bold;
+.TITLE {
+    flex-basis: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    color: var(--title-section);
+    font-size: 3.6rem;
+    font-family: "Source Code Pro", monospace;
+
 }
 
-.text-font-1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
+.TITLE::before,
+.TITLE::after {
+    width: 100%;
+    content: '';
+    height: 3px;
+    background-color: var(--title-section);
+    display: block;
 }
 
 /* Director classes */
 .box {
-    font-family: "Poppins", sans-serif;
+    /* overflow: hidden; */
     margin: 0 auto;
     position: relative;
     max-width: 980px;

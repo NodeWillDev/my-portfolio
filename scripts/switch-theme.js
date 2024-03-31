@@ -9,19 +9,11 @@ import ThemeModes from "./operators/themes-modes.js";
 const box = document.querySelector(".box_switch");
 
 box.addEventListener("click", () => {
-  console.log();
-
   /** @type {HTMLLIElement[]} */
   const modes = document.querySelectorAll(".box_switch li");
-  if (modes[0].classList.contains("active")) {
-    //Light Mode
-    modes[0].classList.remove("active");
-    modes[1].classList.add("active");
-    ThemeModes.setThemeMode("light");
-  } else {
-    //Dark Mode
-    modes[0].classList.add("active");
-    modes[1].classList.remove("active");
-    ThemeModes.setThemeMode("dark");
-  }
+
+  modes.forEach((element) => element.classList.toggle("active"));
+  ThemeModes.setThemeMode(
+    modes[0].classList.contains("active") ? "dark" : "light"
+  );
 });

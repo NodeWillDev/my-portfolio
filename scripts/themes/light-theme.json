@@ -3,5 +3,8 @@
     "--bg-color": "rgba(192, 192, 192, 0.13)",
     "--bg-particle-color": "rgb(0, 0, 0)",
     "--menu-color": "rgb(129, 120, 255)",
-    "--menu-color-active": "rgb(40, 245, 201)"
+    "--menu-color-active": "rgb(40, 245, 201)",
+    "--text-title-color": "rgb(75, 87, 255)",
+    "--text-title-color-name": "rgb(54, 5, 5)",
+    "--title-section": "rgb(0, 0, 0)"
 }

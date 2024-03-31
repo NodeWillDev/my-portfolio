@@ -15,6 +15,7 @@
 }
 
 .switch_theme .box_switch li {
+    user-select: none;
     position: absolute;
     list-style: none;
     opacity: 0;

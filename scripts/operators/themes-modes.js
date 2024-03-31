@@ -18,9 +18,12 @@ export default class ThemeModes {
   static setThemeMode(mode) {
     this.mode = mode;
     let theme = mode == "dark" ? dark : light;
-
     Object.keys(theme).map((key) => {
       document.documentElement.style.setProperty(key, theme[key]);
     });
+
+    /** @type {HTMLImageElement[]} */
+    const images = document.querySelectorAll(".header_image img");
+    images.forEach((element) => element.classList.toggle("active"));
   }
 }

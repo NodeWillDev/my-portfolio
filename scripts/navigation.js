@@ -5,7 +5,7 @@ const button = document.querySelector(".nav_button");
 let time = 0;
 
 button.addEventListener("click", () => {
-  if (Math.abs((time - performance.now()) / 1000) < 0.74) {
+  if (Math.abs((time - performance.now()) / 1000) < 1) {
     document.querySelector(".box_nav").classList.toggle("active");
     document.querySelector(".content_nav").classList.toggle("active");
   }
