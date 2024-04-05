@@ -52,7 +52,7 @@ html {
     margin: 0 auto;
     position: relative;
     max-width: 980px;
-    height: 90vh;
+    height: 100%;
     background-color: var(--bg-color);
     backdrop-filter: blur(10px);
     box-shadow: 11px 11px 19px -7px rgba(0, 0, 0, 0.51);
@@ -63,6 +63,7 @@ html {
 .bg-particle {
     display: block;
     position: absolute;
+    /* bottom: 0%; */
     width: 3px;
     z-index: -1;
     background-color: var(--bg-particle-color);

@@ -1,0 +1,34 @@
+.projects_box {
+    margin-top: 2.6rem;
+}
+
+.projects_box .projects_cards {
+    padding: 1.4em;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-around;
+    margin-top: 2.6em;
+}
+
+.projects_box .projects_cards .card {
+    border: 1px solid green;
+    flex: 1;
+    flex-basis: calc(33.33% - 20px);
+    padding: 1.4em;
+}
+
+.projects_box .projects_cards .card .contents {
+    background-color: red;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    height: 40em;
+}
+
+.projects_box .projects_cards .card .contents h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+}

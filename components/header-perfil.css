@@ -1,6 +1,6 @@
 .header_box {
     width: 100%;
-    height: max-content;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -115,8 +115,6 @@
     /* height: max-content; */
     display: flex;
     overflow: hidden;
-    background: transparent;
-    backdrop-filter: blur(40px);
 }
 
 .header_box .header_image img {

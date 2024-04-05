@@ -17,14 +17,26 @@ const btn = document.querySelector(".ajshdjk");
 
 let ln = "pt";
 
-btn.addEventListener("click", () => {
-  /** @type {HTMLElement[]} */
-  const translate = document.querySelectorAll("._translate");
+const espera = () => {
+  new Promise((resolve, reject) => {
+    /** @type {HTMLElement[]} */
+    const translate = document.querySelectorAll("._translate");
 
-  let langue = (ln = ln == "pt" ? "en" : "pt") == "en" ? en : pt;
+    let langue = (ln = ln == "pt" ? "en" : "pt") == "en" ? en : pt;
 
-  translate.forEach((element, index) => {
-    element.innerHTML = langue[index];
-    console.log(element);
+    translate.forEach((element, index) => {
+      element.innerHTML = "";
+
+      /** @type {string} */
+      const texto = langue[index];
+
+      for (let key in texto) {
+        setTimeout(() => {
+          element.innerHTML += texto[key];
+        }, key * 50);
+      }
+      resolve("jashdjk");
+    });
   });
-});
+};
+btn.addEventListener("click", async () => espera());
