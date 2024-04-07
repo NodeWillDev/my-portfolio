@@ -7,6 +7,8 @@
     --text-title-color: rgb(75, 87, 255);
     --text-title-color-name: rgb(54, 5, 5);
     --title-section: rgb(0, 0, 0);
+    --tile-projects-background: rgba(0, 0, 0, 0.822);
+    --projects-background-description: rgb(2, 163, 123);
 }
 
 * {
@@ -23,6 +25,11 @@ body {
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .TITLE {

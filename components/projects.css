@@ -14,21 +14,136 @@
 }
 
 .projects_box .projects_cards .card {
-    border: 1px solid green;
     flex: 1;
     flex-basis: calc(33.33% - 20px);
-    padding: 1.4em;
+    width: 10%;
+    overflow: hidden;
+    border: 5px solid transparent;
+    transition: 0.2s;
+    border-radius: 20px 5px;
+}
+
+.projects_box .projects_cards .card:hover {
+    box-shadow: 0px 0px 56px 24px var(--projects-background-description);
+    border-radius: 5px 20px;
+    transform: scale(1.09);
+    border: 5px solid var(--bg-particle-color);
+
 }
 
 .projects_box .projects_cards .card .contents {
-    background-color: red;
     justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    height: 40em;
+    height: 27em;
+    transition: 0.45s;
+    position: relative;
+
 }
 
-.projects_box .projects_cards .card .contents h2 {
+.projects_box .projects_cards .card:hover .contents {
+    transform: translateY(-100%);
+    position: relative;
+}
+
+.projects_box .projects_cards .card .contents .icon_box {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: var(--tile-projects-background);
+}
+
+.projects_box .projects_cards .card .contents .icon_box .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.projects_box .projects_cards .card .contents .icon_box .icons li {
+    list-style: none;
+    font-size: 4.6em;
+    color: var(--color);
+}
+
+.projects_box .projects_cards .card .contents .icon_box .icons .theme {
+    color: var(--bg-body-color);
+}
+
+.projects_box .projects_cards .card .contents .icon_box h1 {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    color: var(--menu-color);
+    font-size: 2.6em;
+    width: 100%;
+    text-align: center;
+    font-family: "Reddit Mono", monospace;
+}
+
+.projects_box .projects_cards .card:hover .contents .description_box {
+    transform: skewY(0deg);
+}
+
+.projects_box .projects_cards .card .contents .description_box {
+    height: 100%;
+    transform: skewY(-20deg);
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--projects-background-description);
+    /* overflow: hidden; */
+}
+
+.projects_box .projects_cards .card .contents .description_box::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: skewY(20deg);
+    transition: 0.4s;
+    z-index: -1;
+    background-color: var(--projects-background-description);
+
+}
+
+.projects_box .projects_cards .card:hover .contents .description_box::after {
+    transform: skewY(0deg);
+}
+
+.projects_box .projects_cards .card .contents .description_box p {
+    font-family: "Reddit Mono", monospace;
+    font-weight: 100;
+    font-size: 2em;
+    text-align: center;
+    color: var(--text-title-color-name);
+}
+
+.projects_box .projects_cards .card .contents .description_box p span {
+    color: var(--text-title-color);
+}
+
+.projects_box .projects_cards .card .contents .description_box a button {
+    margin-top: 2em;
+    border: none;
+    background-color: #ffffff31;
+    border-radius: 30px;
+    color: #ffff;
+    cursor: pointer;
+    padding: 1.2em;
+    width: 100%;
     font-family: "Dancing Script", cursive;
-    font-size: 50px;
+    letter-spacing: 2px;
+    font-size: 2.4em;
+    transition: 0.4s;
+}
+
+.projects_box .projects_cards .card .contents .description_box button:hover {
+    background-color: var(--menu-color);
 }

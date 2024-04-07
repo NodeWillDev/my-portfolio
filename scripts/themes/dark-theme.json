@@ -6,5 +6,7 @@
     "--menu-color-active": "rgba(32,201,255,1)",
     "--text-title-color": "rgba(255,255,255,1)",
     "--text-title-color-name": "rgba(43,105,255,1)",
-    "--title-section": "rgb(255, 255, 255)"
+    "--title-section": "rgb(255, 255, 255)",
+    "--tile-projects-background": "rgba(255, 255, 255, .122)",
+    "--projects-background-description": "rgb(2, 163, 123)"
 }
