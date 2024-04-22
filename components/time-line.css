@@ -1,0 +1,28 @@
+.time_line {
+  background-color: var(--scroll-line);
+  position: fixed;
+  width: 2px;
+  height: 100%;
+  left: -4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.time_line .pointer {
+  border: 2px solid purple;
+  width: 2em;
+  height: 2em;
+  border-radius: 50px;
+}
+
+.time_line ._index {
+  position: absolute;
+  width: 6px;
+  height: 0%;
+  background-color: var(--text-title-color);
+  z-index: -6;
+  top: 0;
+  transition: 0.8s linear;
+}
