@@ -11,15 +11,23 @@
 }
 
 .time_line .pointer {
-  border: 2px solid purple;
+  border: 1px solid purple;
   width: 2em;
   height: 2em;
   border-radius: 50px;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.time_line .pointer.active {
+  border: none;
+  background-color: var(--bg-particle-color);
+  box-shadow: 0px 0px 101px 23px var(--bg-particle-color);
 }
 
 .time_line ._index {
   position: absolute;
-  width: 6px;
+  width: 2px;
   height: 0%;
   background-color: var(--text-title-color);
   z-index: -6;

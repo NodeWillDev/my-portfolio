@@ -15,11 +15,12 @@ button.addEventListener("click", () => {
  * @param {MouseEvent} mouse
  */
 const move = (mouse) => {
-  /** @type {HTMLDivElements} */
+  /** @type {HTMLDivElement} */
   const element = document.querySelector(".content_nav");
 
   element.style.left = mouse.clientX + "px";
   element.style.top = mouse.clientY + "px";
+  // element.style.animation = "0s";
 };
 
 button.addEventListener("mousedown", () => {

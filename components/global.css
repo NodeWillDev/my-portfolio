@@ -73,7 +73,7 @@ a {
 .bg-particle {
   display: block;
   position: absolute;
-  /* bottom: 0%; */
+  bottom: -100%;
   width: 3px;
   z-index: -1;
   background-color: var(--bg-particle-color);
