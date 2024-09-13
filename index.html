@@ -1,150 +1,357 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portifolio</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="components/index.css">
+    <link rel="stylesheet" href="components/index.css" />
 
     <!-- FONTS -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oleo+Script:wght@400;700&family=Reddit+Mono&family=Source+Code+Pro:ital@0;1&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oleo+Script:wght@400;700&family=Reddit+Mono&family=Source+Code+Pro:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- ICONS -->
-        <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        
-        <!-- SCRIPTS -->
-        <script defer type="module" src="scripts/index.js"></script>
-    </head>
-    
-    <body>
-        <!-- MENU NAV -->
-        <div class="content_nav">
-            <div class="content">
-                <div class="switch_theme">
-                    <div class="box_switch">
-                        <li class="nav_icon material-symbols-outlined">light_mode</li>
-                        <li class="active nav_icon material-symbols-outlined">dark_mode</li>
-                    </div>
-                </div>
-            </div>
-            <div class="box_nav">
-                <li class="nav_button material-symbols-outlined">Home</li>
-                <li style="--i:0;" class="nav_icon material-symbols-outlined">settings</li>
-                <li style="--i:1" class="nav_icon material-symbols-outlined">call</li>
-                <li style="--i:2" class="nav_icon material-symbols-outlined">book</li>
-            </div>
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <!-- SCRIPTS -->
+    <script defer type="module" src="scripts/index.js"></script>
+  </head>
+
+  <body>
+    <!-- MENU NAV -->
+    <div class="content_nav">
+      <div class="content">
+        <div class="switch_theme">
+          <div class="box_switch">
+            <li class="nav_icon material-symbols-outlined">light_mode</li>
+            <li class="active nav_icon material-symbols-outlined">dark_mode</li>
+          </div>
         </div>
-        <div class="box">
-            <div class="time_line">
-                <div class="_index"></div>
-                <div class="pointer"></div>                
-                <div class="pointer"></div>                
-            </div>
-
-
-        <!-- HEADER -->
-
-
-        <div class="header_box">
-            <h1 class="TITLE _translate">Sobre Mim</h1>
-            <div class="header_info">
-                <div class="header_title">
-                    <h1 class="_translate">Oi👋, meu nome é</h1>
-                    <h1>William da Silva</h1>
-                    <p class="_translate">Sejá bem-vindo ao meu</p>
-                    <p class="_translate">Portfolio</p>
-                    <div class="header_social">
-                        <a href="#">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                    <div class="header_cv">
-
-                        <button class="_translate">Deseja ver meu Currículo? <br /><strong>Clique
-                                aqui</strong></Clique>
-                    </div>
-                </div>
-            </div>
-            <div class="header_image">
-                <img class="dark" src="assets/eu.png" alt="">
-                <img class="active" src="assets/eu.png" alt="">
-            </div>
-            <div class="box_info_me">
-            </div>
-        </div>
-
-        <!-- PROJECTS -->
-
-        <div class="projects_box">
-            <h1 class="TITLE">Projetos</h1>
-            <div class="projects_cards">
-                <div class="card">
-                    <div class="contents">
-                        <div class="icon_box">
-                            <h1>shopping-cart</h1>
-                            <div class="icons">
-                                <li style="--color:#007acc"><i class="devicon-typescript-plain colored"></i></li>
-                                <li style="--color:#42b883"><i class="devicon-prisma-original"></i></li>
-                                <li style="--color:#3b8070"><i class="devicon-nextjs-plain"></i></li>
-                            </div>
-                        </div>
-                        <div class="description_box">
-                            <p>Um sistema simples sistema de <span>CARINHO DE COMPRAS</span></p>
-                            <a href=""><button>Venha ver<i class="fa-brands fa-github"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="contents">
-                        <div class="icon_box">
-                            <h1>simples-crud</h1>
-                            <div class="icons">
-                                <li style="--color:#3c873a"><i class="fa-brands fa-node"></i></li>
-                                <li style="--color:#007acc"><i class="devicon-typescript-plain colored"></i></li>
-                                <li style="--color:#002663"><i class="devicon-express-original colored"></i></li>
-                            </div>
-                        </div>
-                        <div class="description_box">
-                            <p>Uma simples API demonstrando como funciona um CRUD <span> (CREATE, READ, UPDATE,
-                                    DELETE)</span></p>
-                            <a href=""><button>Venha ver<i class="fa-brands fa-github"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="contents">
-                        <div class="icon_box">
-                            <h1>chat-realtime</h1>
-                            <div class="icons">
-                                <li class="theme" style="--color:#fff"><i class="devicon-socketio-original"></i></li>
-                                <li><i class="devicon-react-original colored"></i></li>
-                                <li style="--color:#007acc"><i class="devicon-typescript-plain colored"></i></li>
-                            </div>
-                        </div>
-                        <div class="description_box">
-                            <p>Um sistema de <span>CHAT EM TEMPO REAL</span>, com <span>FRONT END</span> & <span>BACK
-                                    END</span></p>
-                            <a href=""><button>Venha ver<i class="fa-brands fa-github"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="box_nav">
+        <li class="nav_button material-symbols-outlined">Home</li>
+        <li style="--i: 0" class="nav_icon material-symbols-outlined">
+          settings
+        </li>
+        <li style="--i: 1" class="nav_icon material-symbols-outlined">call</li>
+        <li style="--i: 2" class="nav_icon material-symbols-outlined">book</li>
+      </div>
     </div>
-</body>
+    <div class="notify">
+      <div class="icon_box">
+        <i class="fa-regular fa-bell"></i>
+      </div>
+      <div class="description">
+        <p>Obrigado por copiar meu email, por favor entre em contato</p>
+      </div>
+      <div class="button_box">
+        <button>asdasd</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="time_line">
+        <div class="_index"></div>
+        <div class="pointer"></div>
+        <div class="pointer"></div>
+        <div class="pointer"></div>
+      </div>
 
+      <!-- HEADER -->
+
+      <div class="header_box">
+        <h1 class="TITLE _translate">Sobre Mim</h1>
+        <div class="header_info">
+          <div class="header_title">
+            <h1 class="_translate">Oi👋, meu nome é</h1>
+            <h1>William da Silva</h1>
+            <p class="_translate">Sejá bem-vindo ao meu</p>
+            <p class="_translate">Portfolio</p>
+            <div class="header_social">
+              <a href="#">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            <div class="header_cv">
+              <button class="_translate">
+                Deseja ver meu Currículo? <br /><strong>Clique aqui</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header_image">
+          <img class="dark" src="assets/eu.png" alt="" />
+          <img class="active" src="assets/eu.png" alt="" />
+        </div>
+        <div class="box_info_me">
+          <p>
+            Olá👋, sou <span>William da Silva</span> tenho <span>20 anos</span>,
+            moro em <span>SANTA CATARINA - JOINVILLE</span>. <br />Comecei como
+            desenvolvedor de plugins em <span>PHP</span>, em seguida migrei para
+            o <span>Desenvolvimento de Aplicações em Node JS</span> onde me
+            especializei em <span>JavaScript e TypeScript</span>.
+          </p>
+          <h2>Atualmente atuo como desenvolvedor Back End com Node JS</h2>
+        </div>
+      </div>
+
+      <!-- PROJECTS  -->
+
+      <div class="projects_box">
+        <h1 class="TITLE">Projetos</h1>
+        <div class="bg_card_img"></div>
+        <div class="projects_cards">
+          <div class="card">
+            <div class="contents">
+              <div class="icon_box">
+                <h1>shopping-cart</h1>
+                <div class="icons">
+                  <li style="--color: #007acc">
+                    <i class="devicon-typescript-plain colored"></i>
+                  </li>
+                  <li style="--color: #42b883">
+                    <i class="devicon-prisma-original"></i>
+                  </li>
+                  <li style="--color: #3b8070">
+                    <i class="devicon-nextjs-plain"></i>
+                  </li>
+                </div>
+              </div>
+              <div class="description_box">
+                <p>
+                  Um sistema simples sistema de <span>CARINHO DE COMPRAS</span>
+                </p>
+                <a href=""
+                  ><button>Venha ver<i class="fa-brands fa-github"></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="contents">
+              <div class="icon_box">
+                <h1>simples-crud</h1>
+                <div class="icons">
+                  <li style="--color: #3c873a">
+                    <i class="fa-brands fa-node"></i>
+                  </li>
+                  <li style="--color: #007acc">
+                    <i class="devicon-typescript-plain colored"></i>
+                  </li>
+                  <li style="--color: #002663">
+                    <i class="devicon-express-original colored"></i>
+                  </li>
+                </div>
+              </div>
+              <div class="description_box">
+                <p>
+                  Uma simples API demonstrando como funciona um CRUD
+                  <span> (CREATE, READ, UPDATE, DELETE)</span>
+                </p>
+                <a href=""
+                  ><button>Venha ver<i class="fa-brands fa-github"></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="contents">
+              <div class="icon_box">
+                <h1>chat-realtime</h1>
+                <div class="icons">
+                  <li class="theme" style="--color: #fff">
+                    <i class="devicon-socketio-original"></i>
+                  </li>
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li style="--color: #007acc">
+                    <i class="devicon-typescript-plain colored"></i>
+                  </li>
+                </div>
+              </div>
+              <div class="description_box">
+                <p>
+                  Um sistema de <span>CHAT EM TEMPO REAL</span>, com
+                  <span>FRONT END</span> & <span>BACK END</span>
+                </p>
+                <a href=""
+                  ><button>Venha ver<i class="fa-brands fa-github"></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="contents">
+              <div class="icon_box">
+                <h1>simple-bank</h1>
+                <div class="icons">
+                  <li>
+                    <i class="devicon-python-plain colored"></i>
+                  </li>
+                </div>
+              </div>
+              <div class="description_box">
+                <p>
+                  Um simples sistema de banco por <span>CLI</span>, orientado a
+                  objetos
+                </p>
+                <a href=""
+                  ><button>Venha ver<i class="fa-brands fa-github"></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="contents">
+              <div class="icon_box">
+                <h1>minecraft-ban-registry</h1>
+                <div class="icons">
+                  <li>
+                    <i class="devicon-react-original colored"></i>
+                  </li>
+                  <li style="--color: #007acc">
+                    <i class="devicon-typescript-plain colored"></i>
+                  </li>
+                  <li>
+                    <i class="devicon-php-plain colored"></i>
+                  </li>
+                </div>
+              </div>
+              <div class="description_box">
+                <p>
+                  Um projeto com <span>Back End, Fron End e Plugin</span> aonde
+                  o plugin faz integração com o site
+                </p>
+                <a href=""
+                  ><button>Venha ver<i class="fa-brands fa-github"></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="contents">
+              <div class="icon_box">
+                <h1>multi-step-form</h1>
+                <div class="icons">
+                  <li>
+                    <i class="devicon-react-original colored"></i>
+                  </li>
+                  <li style="--color: #007acc">
+                    <i class="devicon-typescript-plain colored"></i>
+                  </li>
+                  <li>
+                    <i class="devicon-mysql-original colored"></i>
+                  </li>
+                </div>
+              </div>
+              <div class="description_box">
+                <p>Um formulário em 3 etapas para cadastro de clientes</p>
+                <a href=""
+                  ><button>Venha ver<i class="fa-brands fa-github"></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+
+      <div class="contact_box">
+        <h1 class="TITLE">CONTATO</h1>
+        <div class="contact_content">
+          <div class="contact">
+            <i class="fa-brands fa-instagram"></i>
+            <div class="contents">
+              <img src="./assets/instagram.png" alt="" />
+              <div class="description">
+                <p>
+                  No instagram eu não posto muita coisa, bem de vez em quando
+                  posto uma foto o outra, mas nada de publicações apenas
+                  stories.
+                </p>
+                <h1>@_is_william</h1>
+              </div>
+              <a href="" target="_blank">
+                <button>Seguir?</button>
+              </a>
+              <!-- <div class="close">X</div> -->
+            </div>
+          </div>
+          <div class="contact">
+            <i class="fa-brands fa-linkedin"></i>
+            <div class="contents">
+              <img src="./assets/linkedin.png" alt="" />
+              <div class="description">
+                <p>
+                  No <span style="--color: #0077b5">LINKEDIN</span> eu
+                  normalmente posto os projetos que estou fazendo, fico de olho
+                  em <span style="--color: #0077b5">VAGAS DE EMPREGO</span> e
+                  principalmente de como esta o mercado de técnologia
+                </p>
+              </div>
+              <a href="" target="_blank">
+                <button>Venha conhecer</button>
+              </a>
+              <!-- <div class="close">X</div> -->
+            </div>
+          </div>
+          <!-- <div class="contact">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div class="contents">
+              <img src="./assets/whatsapp.png" alt="" />
+              <div class="description">
+                <p>
+                  O <span style="--color: #25d366">WHATSAPP</span> é a onde eu
+                  uso mais, pode entrar em contato comigo direto que eu teria
+                  responder o mais rápido possível sem problema algum
+                </p>
+              </div>
+              <a href="" target="_blank">
+                <button>Entrar em contato</button>
+              </a>
+              <div class="close">X</div>
+            </div>
+          </div> -->
+          <div class="contact">
+            <i class="fa-regular fa-envelope"></i>
+            <div class="contents">
+              <img src="./assets/email.png" alt="" />
+              <div class="description">
+                <p>
+                  Com o <span style="--color: #d14836">EMAIL</span> eu deixo
+                  mais para ver proposta, entrar em contato com empresas,
+                  responder outros <span style="--color: #d14836">emails</span>,
+                  nada a mais disso, esse seria o meu email profissional
+                </p>
+                <h1>williamdasilva.dev@gmail.com</h1>
+              </div>
+              <button id="copy-email">Copiar email</button>
+              <!-- <div class="close">X</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

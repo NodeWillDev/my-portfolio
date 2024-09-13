@@ -1,0 +1,46 @@
+.notify {
+  position: fixed;
+  width: 70%;
+  height: 40%;
+  background-color: var(--scroll-line);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 20px 20px;
+}
+
+.notify .icon_box {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  background-color: #cecdcd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.notify .icon_box i {
+  font-size: 5em;
+  color: var(--scroll-line);
+}
+
+.notify .description {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notify .description p {
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  font-weight: bold;
+  font-size: 2em;
+  color: var(--text-title-color);
+}
+
+.notify .button_box {
+  background-color: red;
+}

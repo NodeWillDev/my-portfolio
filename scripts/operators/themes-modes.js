@@ -1,5 +1,5 @@
-import dark from "../themes/dark-theme.json" assert { type: "json" };
-import light from "../themes/light-theme.json" assert { type: "json" };
+import dark from "../themes/dark-theme.json" with { type: "json" };
+import light from "../themes/light-theme.json" with { type: "json" };
 
 /**
  * @typedef {'light'|'dark'} Mode

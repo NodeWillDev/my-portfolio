@@ -1,5 +1,5 @@
 .time_line {
-  background-color: var(--scroll-line);
+  /* background-color: var(--bg-particle-color); */
   position: fixed;
   width: 2px;
   height: 100%;
@@ -11,7 +11,7 @@
 }
 
 .time_line .pointer {
-  border: 1px solid purple;
+  border: 2px solid var(--time-line-pointer);
   width: 2em;
   height: 2em;
   border-radius: 50px;
@@ -20,16 +20,16 @@
 }
 
 .time_line .pointer.active {
-  border: none;
-  background-color: var(--bg-particle-color);
-  box-shadow: 0px 0px 101px 23px var(--bg-particle-color);
+  /* border: none; */
+  background-color: var(--time-line-pointer);
+  box-shadow: 0px 0px 58px 23px var(--time-line-pointer);
 }
 
 .time_line ._index {
   position: absolute;
   width: 2px;
   height: 0%;
-  background-color: var(--text-title-color);
+  background-color: var(--time-line-background);
   z-index: -6;
   top: 0;
   transition: 0.8s linear;

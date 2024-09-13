@@ -8,5 +8,9 @@
     "--text-title-color-name": "rgba(43,105,255,1)",
     "--title-section": "rgb(255, 255, 255)",
     "--tile-projects-background": "rgba(255, 255, 255, .122)",
-    "--projects-background-description": "rgb(2, 163, 123)"
+    "--projects-background-decription": "rgb(2, 163, 123)",
+    "--scroll-line": "rgb(2, 163, 123)",
+    "--time-line-background": "rgb(75, 87, 255)",
+    "--time-line-pointer": "rgb(25, 25, 112)",
+    "--contact-bg": "rgb(255, 255, 255, 0.32)"
 }
