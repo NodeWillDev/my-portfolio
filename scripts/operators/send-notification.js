@@ -37,9 +37,9 @@ export const sendNotification = async (data, type = "success") => {
   /** @type {HTMLDivElement} */
   const clone = document.querySelector(".notify").cloneNode(true);
   document.querySelector("body").appendChild(clone);
-  clone.classList.toggle("active");
+  clone.classList.add("active");
   clone.addEventListener("animationend", async () => {
-    clone.classList.toggle("active");
+    clone.style.top = "-50%";
     await sleep(5500);
     clone.remove();
   });

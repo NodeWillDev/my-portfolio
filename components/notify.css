@@ -1,17 +1,19 @@
 .notify {
+  display: none;
+}
+.notify.active {
   position: fixed;
   width: 90%;
   max-width: 980px;
-  height: 9%;
+  height: auto;
   backdrop-filter: blur(25px);
-  top: -10%;
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  transition: 0.5s;
+  overflow: hidden;
 }
 
-.notify .notify_content {
+.notify.active .notify_content {
   position: relative;
   width: 100%;
   height: 100%;
@@ -21,14 +23,14 @@
   align-items: center;
 }
 
-.notify .notify_content::before {
+.notify.active .notify_content::before {
   content: "";
   position: absolute;
   height: 100%;
   width: 5px;
 }
 
-.notify .notify_content .icon {
+.notify.active .notify_content .icon {
   height: 100%;
   width: 15%;
   display: flex;
@@ -36,15 +38,15 @@
   justify-content: center;
 }
 
-.notify .notify_content .icon i {
+.notify.active .notify_content .icon i {
   font-size: 3em;
 }
-.notify .notify_content .description {
+.notify.active .notify_content .description {
   width: 100%;
   flex: 1;
 }
 
-.notify .notify_content .description p {
+.notify.active .notify_content .description p {
   font-family: "Reddit Mono", monospace;
   font-size: 1.7em;
   font-weight: bold;
@@ -52,13 +54,13 @@
   text-align: center;
 }
 
-.notify .notify_content .bar {
+.notify.active .notify_content .bar {
   position: absolute;
   width: 10%;
   height: 3px;
   left: 0;
-  top: 100%;
-  animation: test 7s linear alternate forwards;
+  top: 93%;
+  animation: test 10s linear alternate forwards;
 }
 
 @keyframes test {
@@ -76,64 +78,64 @@
 }
 
 /* WARNINNG */
-.notify.warnning .notify_content {
+.notify.active.warnning .notify_content {
   background-color: #7e661254;
 }
 
-.notify.warnning .notify_content::before {
+.notify.active.warnning .notify_content::before {
   background-color: #fac918;
 }
 
-.notify.warnning .notify_content .bar {
+.notify.active.warnning .notify_content .bar {
   background-color: #fac918;
 }
 
-.notify .notify_content .icon i {
+.notify.active.warnning .notify_content .icon i {
   color: #ffc800;
 }
 
-.notify .notify_content .description p {
+.notify.active.warnning .notify_content .description p {
   color: #ffc800;
 }
 
 /* SUCCESS */
-.notify.success .notify_content {
+.notify.active.success .notify_content {
   background-color: #d4edda4d;
 }
 
-.notify.success .notify_content::before {
+.notify.active.success .notify_content::before {
   background-color: #00e676;
 }
 
-.notify.success .notify_content .bar {
+.notify.active.success .notify_content .bar {
   background-color: #00e676;
 }
 
-.notify.success .notify_content .icon i {
+.notify.active.success .notify_content .icon i {
   color: #2ecc71;
 }
 
-.notify.success .notify_content .description p {
+.notify.active.success .notify_content .description p {
   color: #2ecc71;
 }
 
 /* DANGER */
-.notify.danger .notify_content {
+.notify.active.danger .notify_content {
   background-color: #ff696125;
 }
 
-.notify.danger .notify_content::before {
+.notify.active.danger .notify_content::before {
   background-color: #ff6f61;
 }
 
-.notify.danger .notify_content .bar {
+.notify.active.danger .notify_content .bar {
   background-color: #ff6f61;
 }
 
-.notify.danger .notify_content .icon i {
+.notify.active.danger .notify_content .icon i {
   color: #f08080;
 }
 
-.notify.danger .notify_content .description p {
+.notify.active.danger .notify_content .description p {
   color: #f08080;
 }

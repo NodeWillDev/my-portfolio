@@ -5,15 +5,17 @@ import ThemeModes from "./operators/themes-modes.js";
  * 1 -> Light Mode
  */
 
-/** @type {HTMLDivElement} */
-const box = document.querySelector(".box_switch");
+/** @type {HTMLDivElement[]} */
+const box = document.querySelectorAll(".box_switch");
 
-box.addEventListener("click", () => {
-  /** @type {HTMLLIElement[]} */
-  const modes = document.querySelectorAll(".box_switch li");
+box.forEach((element) => {
+  element.addEventListener("click", () => {
+    /** @type {HTMLLIElement[]} */
+    const modes = document.querySelectorAll(".box_switch li");
 
-  modes.forEach((element) => element.classList.toggle("active"));
-  ThemeModes.setThemeMode(
-    modes[0].classList.contains("active") ? "dark" : "light"
-  );
+    modes.forEach((element) => element.classList.toggle("active"));
+    ThemeModes.setThemeMode(
+      modes[0].classList.contains("active") ? "dark" : "light"
+    );
+  });
 });

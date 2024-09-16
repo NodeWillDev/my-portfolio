@@ -6,4 +6,6 @@ import "./switch-theme.js";
 import "./time-line.js";
 import "./contact.js";
 import "./projects.js";
+import "./cv-download.js";
 import "./copy-email.js";
+import "./mobile-menu.js";

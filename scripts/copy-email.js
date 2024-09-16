@@ -4,7 +4,7 @@ const email = document.getElementById("copy-email");
 email.addEventListener("click", () => {
   navigator.clipboard.writeText("williamdasilva.dev@gmail.com");
   sendNotification(
-    "Email copiado com sucesso, por favor entre em contato.",
-    "danger"
+    "Obrigado por copiar meu email, pode me encaminhar que responde o mais rápido possível",
+    "success"
   );
 });
