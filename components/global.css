@@ -58,7 +58,10 @@ a {
   background-color: var(--title-section);
   display: block;
 }
-
+.mobile_menu_box,
+.mobile_menu {
+  display: none;
+}
 /* Director classes */
 .box {
   /* overflow: hidden; */

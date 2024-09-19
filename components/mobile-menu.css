@@ -1,0 +1,114 @@
+@media screen and (max-width: 970px) {
+  .content_nav {
+    display: none;
+  }
+
+  .mobile_menu_box {
+    display: initial;
+  }
+  .mobile_menu {
+    display: initial;
+    position: fixed;
+    width: 60px;
+    height: 40px;
+    z-index: 10000;
+    margin-top: 2.5em;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .mobile_menu .bar {
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    background-color: var(--menu-color);
+    transition: 0.3s;
+    border-radius: 40px;
+  }
+
+  .mobile_menu .bar:nth-child(1) {
+    top: 0;
+  }
+
+  .mobile_menu .bar:nth-child(2) {
+    top: 50%;
+  }
+
+  .mobile_menu .bar:nth-child(3) {
+    top: 100%;
+  }
+
+  .mobile_menu.active .bar:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .mobile_menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile_menu.active .bar:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  .mobile_menu_box {
+    position: fixed;
+    width: 0%;
+    height: 0%;
+    transition: 0.5s;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .mobile_menu.active + .mobile_menu_box {
+    width: 72%;
+    height: 100%;
+    background-color: var(--bg-particle-color);
+    backdrop-filter: blur(25px);
+    z-index: 1000;
+  }
+
+  .mobile_menu_box .contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 4em;
+  }
+
+  .mobile_menu_box .contents .atributo {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    gap: 1em;
+    color: var(--bg-body-color);
+  }
+
+  .mobile_menu_box .contents .box_switch {
+    position: relative;
+    padding: 2em;
+    width: 20em;
+    height: 8em;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .mobile_menu_box .contents .box_switch li {
+    font-size: 5em;
+    opacity: 0;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  .mobile_menu_box .contents .box_switch li.active {
+    color: var(--bg-body-color);
+    opacity: 1;
+  }
+}

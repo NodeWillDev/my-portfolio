@@ -46,11 +46,21 @@
       </div>
       <div class="box_nav">
         <li class="nav_button material-symbols-outlined">Home</li>
-        <li style="--i: 0" class="nav_icon material-symbols-outlined">
-          settings
-        </li>
-        <li style="--i: 1" class="nav_icon material-symbols-outlined">call</li>
-        <li style="--i: 2" class="nav_icon material-symbols-outlined">book</li>
+        <a href="#projects">
+          <li style="--i: 0" class="nav_icon material-symbols-outlined">
+            star
+          </li>
+        </a>
+        <a href="#contact">
+          <li style="--i: 1" class="nav_icon material-symbols-outlined">
+            call
+          </li>
+        </a>
+        <a href="#about_me">
+          <li style="--i: 2" class="nav_icon material-symbols-outlined">
+            menu_book
+          </li>
+        </a>
       </div>
     </div>
     <!-- MENU MOBILE -->
@@ -61,24 +71,31 @@
     </div>
     <div class="mobile_menu_box">
       <div class="contents">
-        <div class="atributo">
-          <p>SOBRE MIM</p>
-          <li style="--i: 1" class="nav_icon material-symbols-outlined">
-            call
-          </li>
-        </div>
-        <div class="atributo">
-          <p>CONTATO</p>
-          <li style="--i: 1" class="nav_icon material-symbols-outlined">
-            call
-          </li>
-        </div>
-        <div class="atributo">
-          <p>PROJETOS</p>
-          <li style="--i: 1" class="nav_icon material-symbols-outlined">
-            call
-          </li>
-        </div>
+        <a href="#about_me">
+          <div class="atributo">
+            <p>SOBRE MIM</p>
+            <li style="--i: 1" class="nav_icon material-symbols-outlined">
+              menu_book
+            </li>
+          </div>
+        </a>
+        <a href="#contact">
+          <div class="atributo">
+            <p>CONTATO</p>
+            <li style="--i: 1" class="nav_icon material-symbols-outlined">
+              call
+            </li>
+          </div>
+        </a>
+        <a href="#projects">
+          <div class="atributo">
+            <p>PROJETOS</p>
+            <li style="--i: 1" class="nav_icon material-symbols-outlined">
+              star
+            </li>
+          </div>
+        </a>
+
         <div class="box_switch">
           <li class="nav_icon material-symbols-outlined">light_mode</li>
           <li class="active nav_icon material-symbols-outlined">dark_mode</li>
@@ -97,16 +114,16 @@
       </div>
     </div>
     <div class="box">
-      <div class="time_line">
+      <!-- <div class="time_line">
         <div class="_index"></div>
         <div class="pointer"></div>
         <div class="pointer"></div>
         <div class="pointer"></div>
-      </div>
+      </div> -->
 
       <!-- HEADER -->
 
-      <div class="header_box">
+      <div class="header_box" id="about_me">
         <h1 class="TITLE _translate">Sobre Mim</h1>
         <div class="header_info">
           <div class="header_title">
@@ -159,7 +176,7 @@
       <!-- PROJECTS  -->
 
       <div class="projects_box">
-        <h1 class="TITLE">Projetos</h1>
+        <h1 class="TITLE" id="projects">Projetos</h1>
         <div class="bg_card_img"></div>
         <div class="projects_cards">
           <div class="card">
@@ -330,7 +347,7 @@
       <!-- CONTACT -->
 
       <div class="contact_box">
-        <h1 class="TITLE">CONTATO</h1>
+        <h1 class="TITLE" id="contact">CONTATO</h1>
         <div class="contact_content">
           <div class="contact">
             <i class="fa-brands fa-instagram"></i>

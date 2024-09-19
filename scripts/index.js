@@ -3,7 +3,7 @@
 import "./navigation.js";
 import "./particles.js";
 import "./switch-theme.js";
-import "./time-line.js";
+// import "./time-line.js";
 import "./contact.js";
 import "./projects.js";
 import "./cv-download.js";
