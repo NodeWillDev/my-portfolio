@@ -77,7 +77,11 @@ a {
   overflow: hidden;
 }
 
-.bg-particle {
+.force_compile {
+  display: none;
+}
+
+/* .bg-particle {
   display: block;
   position: absolute;
   bottom: -100%;
@@ -99,4 +103,4 @@ a {
   to {
     bottom: 100%;
   }
-}
+} */
