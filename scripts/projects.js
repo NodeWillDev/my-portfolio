@@ -8,7 +8,7 @@ if (window.innerWidth > 970) {
   cards.forEach((element, index) => {
     element.id = index;
     element.addEventListener("mouseenter", () => {
-      image.style.backgroundImage = `url(../assets/${element.children[0].children[0].children[0].innerHTML}.png)`;
+      image.style.backgroundImage = `url(./assets/${element.children[0].children[0].children[0].innerHTML}.png)`;
       cards.forEach((card) => {
         if (element.id != card.id) {
           card.style.opacity = "0";
