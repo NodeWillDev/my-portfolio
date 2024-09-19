@@ -7,7 +7,7 @@ const button = document.querySelector(
 
 const cv = document.createElement("a");
 cv.download = "";
-cv.href = "../assets/CV William da Silva [NodeWillDev].pdf";
+cv.href = "./assets/CV William da Silva [NodeWillDev].pdf";
 cv.style.display = "none";
 button.addEventListener("click", () => {
   document.body.appendChild(cv);
