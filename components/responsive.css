@@ -77,4 +77,15 @@
 }
 
 @media screen and (max-width: 830px) {
+  .experiences_box .experiences_contents .experience {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+    margin-top: 5em;
+  }
+
+  .experiences_box .experiences_contents .experience i {
+    display: none;
+  }
 }

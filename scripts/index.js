@@ -1,5 +1,5 @@
-// import pt from "./data/translate-pt.json" assert { type: "json" };
-// import en from "./data/translate-en.json" assert { type: "json" };
+import Language from "./operators/language.js";
+
 import "./navigation.js";
 // import "./particles.js";
 import "./experiences-data.js";
@@ -10,3 +10,9 @@ import "./projects.js";
 import "./cv-download.js";
 import "./copy-email.js";
 import "./mobile-menu.js";
+
+document
+  .querySelector("body")
+  .addEventListener("click", () =>
+    Language.changeLanguage(Language.getLanguageType() == "en" ? "pt" : "en")
+  );

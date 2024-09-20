@@ -1,4 +1,4 @@
-import { random } from "./operators/operator.js";
+import { random } from "./operators/custom-random.js";
 
 const box = document.querySelector(".box");
 

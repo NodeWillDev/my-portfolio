@@ -82,7 +82,7 @@
   align-content: center;
   transform-origin: 12rem;
   left: 0%;
-  transform: rotate(calc(360deg / 3 * var(--i)));
+  transform: rotate(calc(360deg / 4 * var(--i)));
   opacity: 1;
   width: 7rem;
 }
@@ -95,6 +95,10 @@
   transform: translate(-50%, -50%);
   backdrop-filter: blur(20px);
   border-radius: 9px;
-
   box-shadow: 10px 10px 76px 0px var(--bg-particle-color);
+}
+
+.content_nav .box_nav a:nth-child(5) li {
+  color: green;
+  transform: rotateX(20deg);
 }

@@ -1,11 +1,4 @@
-/**
- *
- * @param {number} ms
- * @returns {Promise}
- */
-const sleep = (ms) => {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-};
+import { sleep } from "./custom-sleep.js";
 
 /** @type {HTMLIFrameElement} */
 const icon = document.querySelector(".notify .notify_content .icon i");
