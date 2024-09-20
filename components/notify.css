@@ -10,7 +10,7 @@
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  z-index: 10000;
 }
 
 .notify.active .notify_content {
@@ -59,7 +59,7 @@
   width: 10%;
   height: 3px;
   left: 0;
-  top: 93%;
+  top: 100%;
   animation: test 10s linear alternate forwards;
 }
 

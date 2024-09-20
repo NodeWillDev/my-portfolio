@@ -1,0 +1,65 @@
+.experiences_box {
+  width: 100%;
+  min-height: 100vh;
+  height: calc(100vh + 100%);
+}
+.experiences_box .experiences_contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.8em;
+}
+
+.experiences_box .experiences_contents .experience {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+.experiences_box .experiences_contents .experience .tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.7em;
+  width: 20%;
+}
+
+.experiences_box .experiences_contents .experience h3 {
+  width: 100%;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  color: var(--bg-particle-color);
+}
+
+.experiences_box .experiences_contents .experience i {
+  font-size: 2em;
+}
+
+.experiences_box .experiences_contents .experience .bar {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: var(--contact-bg);
+  border-radius: 20px;
+}
+
+.experiences_box .experiences_contents .experience .bar::before {
+  content: "";
+  position: absolute;
+  width: var(--percent);
+  height: 10px;
+  border-radius: 20px;
+  background-color: var(--color_bar);
+}
+
+.experiences_box .experiences_contents .experience span {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--bg-particle-color);
+}
