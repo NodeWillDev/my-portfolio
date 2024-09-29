@@ -111,4 +111,23 @@
     color: var(--bg-body-color);
     opacity: 1;
   }
+  .mobile_menu_box .contents .switch_language {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+    cursor: pointer;
+  }
+  .mobile_menu_box .contents .switch_language img {
+    width: 5em;
+    position: absolute;
+    z-index: 30;
+    top: 100%;
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+  .mobile_menu_box .contents .switch_language img.active {
+    opacity: 1;
+  }
 }

@@ -71,21 +71,40 @@ const data = [
 ];
 
 data.forEach((experience) => {
-  const element = document
-    .querySelector(".experiences_box .experiences_contents .experience")
-    .cloneNode(true);
-  element.childNodes[3].style.setProperty(
-    "--percent",
-    `${experience.percent}%`
-  );
-  element.childNodes[3].style.setProperty(
-    "--color_bar",
-    `${experience.color_bar}`
-  );
-  element.childNodes[1].childNodes[1].innerHTML = experience.title;
-  element.childNodes[5].innerHTML = `${experience.percent}%`;
-  element.childNodes[1].childNodes[3].className = experience.icon_class;
-  document
-    .querySelector(".experiences_box .experiences_contents")
-    .appendChild(element);
+  if (window.innerWidth > 830) {
+    const element = document
+      .querySelector(".experiences_box .experiences_contents .experience")
+      .cloneNode(true);
+    element.childNodes[3].style.setProperty(
+      "--percent",
+      `${experience.percent}%`
+    );
+    element.childNodes[3].style.setProperty(
+      "--color_bar",
+      `${experience.color_bar}`
+    );
+    element.childNodes[1].childNodes[1].innerHTML = experience.title;
+    element.childNodes[5].innerHTML = `${experience.percent}%`;
+    element.childNodes[1].childNodes[3].className = experience.icon_class;
+    document
+      .querySelector(".experiences_box .experiences_contents")
+      .appendChild(element);
+  } else {
+    const element = document
+      .querySelector(".experiences_box .skill")
+      .cloneNode(true);
+    element.childNodes[1].childNodes[1].childNodes[3].childNodes[1].className = `${experience.icon_class}`;
+    element.childNodes[3].style.setProperty(
+      "--color",
+      `${experience.color_bar}`
+    );
+    element.childNodes[1].childNodes[1].childNodes[1].innerHTML =
+      experience.percent + "%";
+    element.childNodes[3].childNodes[1].style.strokeDashoffset = Math.floor(
+      472 - 440 * parseFloat(experience.percent / 100)
+    );
+    document
+      .querySelector(".experiences_box .experiences_contents")
+      .appendChild(element);
+  }
 });

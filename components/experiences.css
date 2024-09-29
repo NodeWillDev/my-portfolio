@@ -65,3 +65,7 @@
   font-weight: bold;
   color: var(--bg-particle-color);
 }
+
+.experiences_box .skill {
+  display: none;
+}

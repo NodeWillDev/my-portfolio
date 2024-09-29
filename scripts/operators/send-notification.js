@@ -14,7 +14,7 @@ const text = document.querySelector(".notify .notify_content .description p");
  */
 
 export const sendNotification = async (data, type = "success") => {
-  document.querySelector(".notify").classList.add(type);
+  // document.querySelector(".notify").classList.add(type);
   text.innerHTML = data;
   switch (type) {
     case "warnning":
@@ -30,7 +30,7 @@ export const sendNotification = async (data, type = "success") => {
   /** @type {HTMLDivElement} */
   const clone = document.querySelector(".notify").cloneNode(true);
   document.querySelector("body").appendChild(clone);
-  clone.classList.add("active");
+  clone.className = `notify ${type} active`;
   clone.addEventListener("animationend", async () => {
     clone.style.top = "-50%";
     await sleep(5500);
